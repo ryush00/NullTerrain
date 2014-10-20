@@ -4,4 +4,4 @@ env:
   global: []
     
 after_success:
-  - mvn clean deploy cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:cobertura -q --settings settings.xml -P jdoc-and-sources
+  - mvn clean deploy --settings settings.xml
